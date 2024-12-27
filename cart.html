@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="car.css">
+</head>
+<body>
+    <div class="cart-container">
+        <h1>Your Shopping Cart</h1>
+        
+        <!-- Cart Items -->
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="https://via.placeholder.com/100" alt="Product Image">
+                <div class="item-details">
+                    <h3>Product Name</h3>
+                    <p class="item-price">$29.99</p>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" value="1" min="1">
+                </div>
+                <div class="item-actions">
+                    <button class="remove-btn">Remove</button>
+                </div>
+            </div>
+            <!-- Repeat .cart-item divs for each product -->
+        </div>
+
+        <!-- Cart Summary -->
+        <div class="cart-summary">
+            <div class="summary-item">
+                <span>Subtotal:</span>
+                <span class="total-price">$29.99</span>
+            </div>
+            <div class="summary-item">
+                <span>Tax:</span>
+                <span class="tax">$2.40</span>
+            </div>
+            <div class="summary-item">
+                <span>Estimated Shipping:</span>
+                <span class="shipping">$5.00</span>
+            </div>
+            <hr>
+            <div class="summary-item total">
+                <span>Total:</span>
+                <span class="grand-total">$37.39</span>
+            </div>
+        </div>
+
+        <!-- Checkout Button -->
+        <div class="checkout">
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+</body>
+</html>
